@@ -1,2 +1,6 @@
 /* Font Family */
-@import url('https://fonts.googleapis.com/css2?family=Biryani&family=Calistoga&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Biryani&family=Calistoga&display=swap");
+
+body{
+    margin: 0;
+}
