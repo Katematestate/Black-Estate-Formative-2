@@ -1,6 +1,74 @@
 /* Font Family */
 @import url("https://fonts.googleapis.com/css2?family=Biryani&family=Calistoga&display=swap");
 
-body{
-    margin: 0;
+body {
+  margin: 0;
+  background-color: #f1efef;
 }
+
+button {
+  background-color: #c59407;
+  border: #9f7703 1px solid;
+  color: #f1efef;
+  border-radius: 2em;
+  font-family: 'Biryani';
+  padding-top: 4px;
+  box-shadow: 1px 1px 4px 0 #333;
+}
+
+p {
+  font-family: "Biryani";
+}
+
+h1,
+h2 {
+  font-family: "Calistoga";
+}
+
+h3 {
+  font-family: calistoga;
+  text-decoration: underline;
+  text-align: center;
+  color: #f1efef;
+}
+
+.nav-section {
+  position: fixed;
+  background-color: #f1efef;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items li {
+  margin: 10px;
+}
+
+ul li {
+  list-style: none;
+  font-family: "Calistoga";
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #14281d;
+  text-decoration: none;
+}
+
+#our-vineyards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  background-color: #14281d;
+}
+
+
