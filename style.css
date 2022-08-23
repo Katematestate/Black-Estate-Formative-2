@@ -19,8 +19,49 @@ h3 {
   font-size: 24px;
 }
 
+p{
+    font-family: 'Biryani';
+}
+
+button{
+    display: block;
+    background-color: #C59407;
+    border: 1px solid #9F7703;
+    color: #f1efef;
+    font-family: 'Calistoga';
+    font-size: 18px;
+    padding: 8px 24px;
+    border-radius: 2em;
+    box-shadow: 1px 1px 4px 0 #555;
+    margin-left: auto;
+    min-width: 130px;
+}
+
 a {
   color: #f1efef;
+}
+
+.grid-column-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.grid-column-two img{
+    width: 100%;
+}
+
+.page-width{
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.page-background-light{
+    background-color: #f1efef;
+}
+
+.padding-large{
+    padding: 48px;
 }
 
 /* BEGIN NAV BAR */
@@ -151,4 +192,28 @@ header {
   transform: scale(1.05);
 }
 /* END OUR VINEYARD */
-/* START COME VISIT */
+/* START SHOP */
+#shop-options {
+    text-align: center;
+    color: #f1efef;
+  }
+  #shop-options .vineyards-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    width: 1440px;
+    margin: 0 auto;
+  }
+  #shop-options img{
+    width: 100%;
+    aspect-ratio: 1;
+    transition: transform 250ms ease;
+  }
+
+  #shop-options .shop-img{
+    flex: 1 1 0;
+  }
+  
+  .shop-img img:hover {
+    transform: scale(1.05);
+  }
