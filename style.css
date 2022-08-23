@@ -61,7 +61,13 @@ ul {
 
 a {
   color: #14281d;
-  text-decoration: none;
+  text-decoration: none; 
+}
+
+.logo-brand{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #our-vineyards {
@@ -71,4 +77,20 @@ a {
   background-color: #14281d;
 }
 
+.award-circle{
+  position: absolute;
+  bottom: 20px;
+  border-radius: 100%;
+  height: 12vh;
+  width: 12vh;
+  border: #f1efef 3px solid;
+  color: #f1efef;
+  text-align: center;
+  padding: 30px;
+}
 
+.award-blurb{
+  position: absolute;
+  bottom: 40px;
+  color: #f1efef;
+}
