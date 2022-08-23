@@ -3,15 +3,19 @@
 
 body {
   margin: 0;
+  padding-top: 74px;
 }
 
 /* the left and right after position anchers the two ends so it stretches across */
 
 header {
   position: fixed;
+  top: 0;
   right: 0;
   left: 0;
   padding: 10px;
+  box-sizing: border-box;
+  height: 74px;
   background-color: #f1efef;
 }
 
@@ -62,3 +66,4 @@ header {
 .nav-section .header-icon:hover {
   transform: scale(1.2);
 }
+
