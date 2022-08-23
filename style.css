@@ -6,10 +6,11 @@ body {
   padding-top: 74px;
 }
 
+/* BEGIN NAV BAR */
 /* the left and right after position anchers the two ends so it stretches across */
-
 header {
   position: fixed;
+  z-index: 9000;
   top: 0;
   right: 0;
   left: 0;
@@ -66,4 +67,48 @@ header {
 .nav-section .header-icon:hover {
   transform: scale(1.2);
 }
+/* END NAV BAR */
+/* BEGIN LANDING PAGE */
+#landing-page {
+  background-color: #14281d;
+}
 
+#landing-page .landing-img-wrap {
+  position: relative;
+  width: clamp(150px, 100%, 1400px);
+  margin: 0 auto;
+}
+
+#landing-page img {
+  display: block;
+  filter: brightness(0.6);
+}
+
+#landing-page .tagline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #f1efef;
+  font-family: "Calistoga";
+  font-size: 36px;
+}
+
+#landing-page .tagline .award-circle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex: 0 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
+  border: 3px solid #f1efef;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  font-size: 0.5em;
+}
