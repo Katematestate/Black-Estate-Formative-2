@@ -19,6 +19,12 @@ h3 {
   font-size: 24px;
 }
 
+h4{
+  font-family: 'Calistoga';
+  font-weight: 400;
+  font-size: 20px;
+}
+
 p {
   font-family: "Biryani";
 }
@@ -130,7 +136,7 @@ header {
 
 #landing-page{
   position: relative;
-  height: 60vh;
+  height: 90vh;
 }
 
 #landing-page .landing-img {
@@ -223,3 +229,78 @@ header {
 }
 /* END SHOP */
 /* FOOTER START */
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 16px;
+  background-color: #14281d;
+  padding: 16px;
+  color: #f1efef;
+}
+footer h4{
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+#store-hours{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  flex-grow: 1;
+  gap: 16px;
+  font-family: 'Calistoga';
+}
+
+#store-hours .flex-week{
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+#store-hours .days .hours{
+  display: flex;
+  flex-direction: row;
+}
+
+#join-newsletter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 1;
+  flex-grow: 1;
+  gap: 16px;
+}
+
+#join-newsletter button{
+  display: block;
+  margin: 0 auto;
+}
+
+.input-fields{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.input-fields input{
+  min-width: 0;
+}
+
+.input-fields .email{
+  grid-column: span 2;
+}
+
+#contact-us{
+  flex-shrink: 0;
+  flex-grow: 1;
+}
+
+#contact-us h4{
+  margin-bottom: 16px;
+}
