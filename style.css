@@ -19,49 +19,49 @@ h3 {
   font-size: 24px;
 }
 
-p{
-    font-family: 'Biryani';
+p {
+  font-family: "Biryani";
 }
 
-button{
-    display: block;
-    background-color: #C59407;
-    border: 1px solid #9F7703;
-    color: #f1efef;
-    font-family: 'Calistoga';
-    font-size: 18px;
-    padding: 8px 24px;
-    border-radius: 2em;
-    box-shadow: 1px 1px 4px 0 #555;
-    margin-left: auto;
-    min-width: 130px;
+button {
+  display: block;
+  background-color: #c59407;
+  border: 1px solid #9f7703;
+  color: #f1efef;
+  font-family: "Calistoga";
+  font-size: 18px;
+  padding: 8px 24px;
+  border-radius: 2em;
+  box-shadow: 1px 1px 4px 0 #555;
+  margin-left: auto;
+  min-width: 130px;
 }
 
 a {
   color: #f1efef;
 }
 
-.grid-column-two{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
+.grid-column-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
 }
 
-.grid-column-two img{
-    width: 100%;
+.grid-column-two img {
+  width: 100%;
 }
 
-.page-width{
-    width: 1440px;
-    margin: 0 auto;
+.page-width {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
-.page-background-light{
-    background-color: #f1efef;
+.page-background-light {
+  background-color: #f1efef;
 }
 
-.padding-large{
-    padding: 48px;
+.padding-large {
+  padding: 48px;
 }
 
 /* BEGIN NAV BAR */
@@ -127,28 +127,35 @@ header {
 }
 /* END NAV BAR */
 /* BEGIN LANDING PAGE */
-#landing-page .landing-img-wrap {
+
+#landing-page{
   position: relative;
-  width: clamp(150px, 100%, 1440px);
-  margin: 0 auto;
+  height: 60vh;
 }
 
-#landing-page img {
-  display: block;
+#landing-page .landing-img {
+  height: 100%;
+  margin: 0 auto;
+  background-image: url(./resources/images/black_estate_vineyard.jpg);
+  background-size: cover;
+  background-position: center;
   filter: brightness(0.6);
 }
 
 #landing-page .tagline {
+  position: absolute;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   gap: 24px;
-  position: absolute;
+  right: 0;
   bottom: 20px;
-  left: 20px;
+  left: 0;
   color: #f1efef;
   font-family: "Calistoga";
   font-size: 36px;
+  z-index: 1;
 }
 
 #landing-page .tagline .award-circle {
@@ -176,7 +183,6 @@ header {
   display: flex;
   flex-direction: row;
   gap: 32px;
-  width: 1440px;
   margin: 0 auto;
 }
 
@@ -193,27 +199,27 @@ header {
 /* END OUR VINEYARD */
 /* START SHOP */
 #shop-options {
-    text-align: center;
-    color: #f1efef;
-  }
-  #shop-options .vineyards-grid {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-    width: 1440px;
-    margin: 0 auto;
-  }
-  #shop-options img{
-    width: 100%;
-    aspect-ratio: 1;
-    transition: transform 250ms ease;
-  }
+  text-align: center;
+  color: #f1efef;
+}
+#shop-options .shop-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  margin: 0 auto;
+}
+#shop-options img {
+  width: 100%;
+  aspect-ratio: 1;
+  transition: transform 250ms ease;
+}
 
-  #shop-options .shop-img{
-    flex: 1 1 0;
-  }
-  
-  .shop-img img:hover {
-    transform: scale(1.05);
-  }
-  /* END SHOP */
+#shop-options .shop-img {
+  flex: 1 1 0;
+}
+
+.shop-img img:hover {
+  transform: scale(1.05);
+}
+/* END SHOP */
+/* FOOTER START */
