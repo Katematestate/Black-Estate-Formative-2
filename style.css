@@ -127,7 +127,6 @@ header {
 }
 /* END NAV BAR */
 /* BEGIN LANDING PAGE */
-
 #landing-page .landing-img-wrap {
   position: relative;
   width: clamp(150px, 100%, 1440px);
