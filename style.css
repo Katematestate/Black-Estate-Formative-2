@@ -19,14 +19,23 @@ h3 {
   font-size: 24px;
 }
 
-h4{
-  font-family: 'Calistoga';
+h4 {
+  font-family: "Calistoga";
   font-weight: 400;
   font-size: 20px;
 }
 
 p {
   font-family: "Biryani";
+}
+
+table {
+  color: inherit;
+  font-family: "Biryani";
+}
+
+#store-hours td:nth-child(2) {
+  padding-left: 16px;
 }
 
 button {
@@ -134,7 +143,7 @@ header {
 /* END NAV BAR */
 /* BEGIN LANDING PAGE */
 
-#landing-page{
+#landing-page {
   position: relative;
   height: 90vh;
 }
@@ -229,46 +238,39 @@ header {
 }
 /* END SHOP */
 /* FOOTER START */
-footer{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 16px;
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   background-color: #14281d;
   padding: 16px;
   color: #f1efef;
 }
-footer h4{
+footer h4 {
   margin: 0;
 }
 
-p{
-  margin: 0;
-}
-
-#store-hours{
+#store-hours {
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-shrink: 0;
   flex-grow: 1;
   gap: 16px;
-  font-family: 'Calistoga';
+  font-family: "Calistoga";
 }
 
-#store-hours .flex-week{
+#store-hours .flex-week {
   display: flex;
   flex-direction: row;
   gap: 32px;
 }
 
-#store-hours .days .hours{
+#store-hours .days .hours {
   display: flex;
   flex-direction: row;
 }
 
-#join-newsletter{
+#join-newsletter {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -277,30 +279,62 @@ p{
   gap: 16px;
 }
 
-#join-newsletter button{
+#join-newsletter button {
   display: block;
   margin: 0 auto;
 }
 
-.input-fields{
+.input-fields {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
 }
 
-.input-fields input{
+.input-fields input {
   min-width: 0;
 }
 
-.input-fields .email{
+.input-fields .email {
   grid-column: span 2;
 }
 
-#contact-us{
+#contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-shrink: 0;
   flex-grow: 1;
 }
 
-#contact-us h4{
+#contact-us h4 {
   margin-bottom: 16px;
 }
+
+#contact-us p {
+  margin: 0;
+}
+
+#contact-us .contact-footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#other-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: "Calistoga";
+  font-size: 20px;
+  padding-right: 75px;
+}
+
+#other-links .social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+/* FOOTER END */
+
