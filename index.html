@@ -9,10 +9,10 @@
   <body>
     <header>
       <nav class="nav-section">
-        <a href="shop">Shop</a>
-        <a href="vineyards">Vineyards</a>
-        <a href="visit">Visit</a>
-        <a href="stay">Stay</a>
+        <a href="#">Shop</a>
+        <a href="#">Vineyards</a>
+        <a href="#">Visit</a>
+        <a href="#">Stay</a>
 
         <div class="logo-brand">
           <a class="brand" href="/">
@@ -20,22 +20,36 @@
           </a>
         </div>
 
-        <a href="people">People</a>
-        <a href="contact">Contact</a>
-        <a href="membership">Membership</a>
+        <a href="#">People</a>
+        <a href="#">Contact</a>
+        <a href="#">Membership</a>
 
         <div class="header-icon">
-          <a href="account-icon">
+          <a href="#">
             <img src="./resources/account-icon.svg" alt="" />
           </a>
         </div>
         <div class="header-icon">
-          <a href="cart-icon">
+          <a href="#">
             <img src="./resources/images/cart-icon.svg" alt="" />
           </a>
         </div>
+        <label id="mobile-nav-open" class="header-icon" for="mobile-nav-drawer">
+          <img src="./resources/hamburger menu.svg" alt="" />
+        </label>
       </nav>
     </header>
+
+    <input type="checkbox" name="nav-drawer" id="mobile-nav-drawer" />
+    <nav class="nav-section-mobile">
+      <a href="#">Shop</a>
+      <a href="#">Vineyards</a>
+      <a href="#">Visit</a>
+      <a href="#">Stay</a>
+      <a href="#">People</a>
+      <a href="#">Contact</a>
+      <a href="#">Membership</a>
+    </nav>
 
     <section id="landing-page">
       <div class="landing-img"></div>
@@ -50,18 +64,18 @@
     <section id="our-vineyards">
       <h2>Our Vineyards</h2>
       <div class="vineyards-grid page-width">
-        <a href="" class="home-vineyard vineyard-img">
+        <a href="#" class="home-vineyard vineyard-img">
           <img
             src="./resources/images/home-vineyard-portrait.jpg"
             alt="home vineyard portrait"
           />
           <h3 class="linked-home-vineyard">Home</h3>
         </a>
-        <a href="" class="damsteep-vineyard vineyard-img">
+        <a href="#" class="damsteep-vineyard vineyard-img">
           <img src="./resources/images/damsteep.jpg" alt="damsteep vineyard" />
           <h3 class="linked-damsteep-vineyard">Damsteep</h3>
         </a>
-        <a href="" class="netherwood-vineyard vineyard-img">
+        <a href="#" class="netherwood-vineyard vineyard-img">
           <img
             src="./resources/images/netherwood.jpg"
             alt="netherwood vineyard"
@@ -100,19 +114,19 @@
     <section id="shop-options">
       <h2>Shop</h2>
       <div class="shop-grid page-width">
-        <a href="" class="shop-wine shop-img">
+        <a href="#" class="shop-wine shop-img">
           <img src="./resources/images/black-wine-bottle.jpg" alt="" />
           <h3 class="linked-wines">Wines</h3>
         </a>
-        <a href="" class="shop-food shop-img">
+        <a href="#" class="shop-food shop-img">
           <img src="./resources/images/food.jpg" alt="plate of food" />
           <h3 class="linked-food">Food</h3>
         </a>
-        <a href="" class="shop-vouchers shop-img">
+        <a href="#" class="shop-vouchers shop-img">
           <img src="./resources/images/voucher.jpg" alt="envelope voucher" />
           <h3 class="linked-vouchers">Vouchers</h3>
         </a>
-        <a href="" class="shop-other shop-img">
+        <a href="#" class="shop-other shop-img">
           <img src="./resources/images/wine-bundle.jpg" alt="wine bundle" />
           <h3 class="linked-other">Other</h3>
         </a>
@@ -200,17 +214,17 @@
           <p>Canterbury, New Zealand</p>
         </div>
         <section id="other-links">
-          <a href="">Shipping</a>
-          <a href="">Distributors</a>
+          <a href="#">Shipping</a>
+          <a href="#">Distributors</a>
           <span>Follow Us</span>
           <div class="social-media-icons">
-            <a href=""
+            <a href="#"
               ><img src="./resources/facebook icon.svg" alt="facebook icon"
             /></a>
-            <a href=""
+            <a href="#"
               ><img src="./resources/instagram icon.svg" alt="instagram icon"
             /></a>
-            <a href=""
+            <a href="#"
               ><img src="./resources/linkedIN.svg" alt="linkedIn icon"
             /></a>
           </div>

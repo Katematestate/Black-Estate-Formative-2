@@ -90,7 +90,12 @@ header {
   padding: 10px;
   box-sizing: border-box;
   height: 74px;
+  font-family: "Calistoga";
   background-color: #f1efef;
+}
+
+header a {
+  text-decoration: none;
 }
 
 .nav-section {
@@ -109,8 +114,6 @@ header {
 }
 
 .nav-section > a {
-  text-decoration: none;
-  font-family: "Calistoga";
   color: #14281d;
   position: relative;
 }
@@ -141,11 +144,42 @@ header {
   transform: scale(1.2);
 }
 /* END NAV BAR */
+/* NAV BAR MOBILE VERSION */
+#mobile-nav-open {
+  display: none;
+}
+
+#mobile-nav-drawer {
+  display: none;
+}
+
+.nav-section-mobile {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #14281d;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: 74px;
+  min-width: 60vw;
+  z-index: 400;
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.4);
+  transform: translateX(100%);
+  font-family: "Calistoga";
+}
+.nav-section-mobile a {
+  width: 100%;
+  padding: 16px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
 /* BEGIN LANDING PAGE */
 
 #landing-page {
   position: relative;
-  height: 90vh;
+  height: 60vh;
 }
 
 #landing-page .landing-img {
@@ -338,3 +372,76 @@ footer h4 {
 }
 /* FOOTER END */
 
+@media (max-width: 991px) {
+  header .nav-section > a {
+    display: none;
+  }
+
+  header .nav-section .logo-brand {
+    margin-right: auto;
+  }
+  /* code for displaying the drawer menu */
+  header .nav-section #mobile-nav-open {
+    display: block;
+  }
+  #mobile-nav-drawer:checked + .nav-section-mobile {
+    display: flex;
+    transform: translateX(0);
+  }
+  /* end code for displaying the drawer menu */
+  #landing-page {
+    height: 60vh;
+  }
+
+  #landing-page .tagline {
+    flex-direction: column;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  #landing-page .tagline .award-circle {
+    display: none;
+  }
+
+  #our-vineyards .vineyards-grid,
+  #shop-options .shop-grid {
+    flex-direction: column;
+    gap: 0;
+  }
+  .grid-column-two {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  #come-visit button,
+  #become-member button {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #come-visit {
+    padding: 0;
+  }
+
+  #come-visit .visit-blurb {
+    order: 2;
+    padding: 16px;
+  }
+
+  #come-visit .image-visit-us {
+    order: 1;
+  }
+
+  #become-member {
+    padding: 0;
+  }
+
+  #become-member .become-member-blurb {
+    padding: 16px;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
