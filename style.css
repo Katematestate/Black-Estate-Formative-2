@@ -446,5 +446,34 @@ footer h4 {
   }
 }
 
-
 /* SHOP PAGE CSS */
+#shop-wine-page {
+  height: 60vh;
+}
+
+#shop-wine-page .shop-landing-img {
+  height: 100%;
+  margin: 0 auto;
+  background-image: url(./resources/images/shop-landing-img.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+#shop-wine-page .shop-options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 32px;
+  padding-top: 32px;
+  color: #f1efef;
+  font-family: "Calistoga";
+  font-size: 36px;
+}
+
+#our-wines {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1500px;
+  background-color: #f1efef;
+}
