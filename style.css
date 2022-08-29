@@ -56,6 +56,7 @@ a {
   color: #f1efef;
 }
 
+/* example of helper class */
 .grid-column-two {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -164,7 +165,7 @@ header a {
   top: 74px;
   min-width: 60vw;
   z-index: 400;
-  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
   transform: translateX(100%);
   font-family: "Calistoga";
 }
@@ -174,9 +175,8 @@ header a {
   font-size: 20px;
   text-decoration: none;
 }
-
+/* END NAV BAR MOBILE VERSION */
 /* BEGIN LANDING PAGE */
-
 #landing-page {
   position: relative;
   height: 60vh;
