@@ -31,6 +31,20 @@ h4 {
   font-size: 20px;
 }
 
+h5 {
+  font-family: "Calistoga";
+  font-weight: 400;
+  font-size: 28px;
+  margin: 4px;
+}
+
+h6 {
+  font-family: "Calistoga";
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0;
+}
+
 p {
   font-family: "Biryani";
 }
@@ -486,7 +500,7 @@ footer h4 {
 }
 
 #our-wine {
-  display: grid;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -511,4 +525,44 @@ footer h4 {
   background-color: #f1efef;
 }
 
+#wine-grid .wine-options .wine-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-height: 800px;
+  padding: 18px;
+  font-size: 14px;
+}
 
+#wine-grid .wine-options .wine-card img{
+max-height: 500px;
+}
+
+#wine-grid .wine-options .wine-card .wine-icon{
+
+}
+
+#wine-grid .wine-options .wine-card a {
+  color: #14281d;
+  font-family: "Calistoga";
+  font-size: 18px;
+  padding-bottom: 16px;
+}
+
+#wine-grid .wine-options .ca-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+#wine-grid .wine-options input{
+  max-width: 50px;
+}
+
+#wine-grid .wine-options button{
+  max-width: 80px;
+  max-height: 100px;
+  font-size: 14px;
+}
