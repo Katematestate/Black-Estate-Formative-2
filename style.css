@@ -517,7 +517,7 @@ footer h4 {
   gap: 12px;
 }
 
-#wine-grid {
+#wine-grid .wine-options {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin: 0 auto;
@@ -525,7 +525,7 @@ footer h4 {
   background-color: #f1efef;
 }
 
-#wine-grid .wine-options .wine-card {
+.wine-card {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -537,6 +537,7 @@ footer h4 {
 
 #wine-grid .wine-options .wine-card img {
   max-height: 500px;
+  object-fit: contain;
 }
 
 #wine-grid .wine-options .wine-card a {
