@@ -529,16 +529,24 @@ footer h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  max-height: 800px;
   padding: 18px;
   font-size: 14px;
 }
 
-#wine-grid .wine-options .wine-card img {
-  max-height: 500px;
-  object-fit: contain;
+#wine-grid .wine-image{
+  position: relative;
 }
+
+#wine-grid .wine-card img{
+  max-height: 400px;
+}
+
+#wine-grid .wine-glass{
+  position: absolute;
+  bottom: 0;
+  left: calc(100% + 20px);
+}
+
 
 #wine-grid .wine-options .wine-card a {
   color: #14281d;
