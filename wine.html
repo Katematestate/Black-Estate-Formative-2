@@ -1,12 +1,78 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wine Information</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav-section">
+        <a href="./shop.html">Shop</a>
+        <a href="#">Vineyards</a>
+        <a href="#">Visit</a>
+        <a href="#">Stay</a>
+
+        <div class="logo-brand">
+          <a class="brand" href="/">
+            <img src="./resources/images/Black Estate Logo.svg" alt="" />
+          </a>
+        </div>
+
+        <a href="#">People</a>
+        <a href="#">Contact</a>
+        <a href="#">Membership</a>
+
+        <div class="header-icon">
+          <a href="#">
+            <img src="./resources/account-icon.svg" alt="" />
+          </a>
+        </div>
+        <div class="header-icon">
+          <a href="#">
+            <img src="./resources/images/cart-icon.svg" alt="" />
+          </a>
+        </div>
+        <label id="mobile-nav-open" class="header-icon" for="mobile-nav-drawer">
+          <img src="./resources/hamburger menu.svg" alt="" />
+        </label>
+      </nav>
+
+      <input type="checkbox" name="nav-drawer" id="mobile-nav-drawer" />
+      <nav class="nav-section-mobile">
+        <a href="./shop.html">Shop</a>
+        <a href="#">Vineyards</a>
+        <a href="#">Visit</a>
+        <a href="#">Stay</a>
+        <a href="#">People</a>
+        <a href="#">Contact</a>
+        <a href="#">Membership</a>
+      </nav>
+    </header>
+
+    <section id="wine-info-page">
+      <div class="wine-landing">
+        <img
+          src="./resources/images/Treble Rose 2022 Wine.png"
+          alt="pink wine bottle"
+        />
+      </div>
+      <div class="wine-info">
+        <div class="wine-tags">
+          <span class="organic">Organic</span>
+          <span class="biodynamic">Biodynamic</span>
+        </div>
+        <h2>Treble Rosé</h2>
+        <h2>$38</h2>
+        <div class="ca-field">
+          <h6>Qty</h6>
+          <input class="add-cart" type="number" value="1" />
+          <button>Add to Cart</button>
+        </div>
+        <a href="#">See our shipping rates</a>
+        <p>Free shipping within NZ for orders over $150</p>
+      </div>
+    </section>
+  </body>
 </html>

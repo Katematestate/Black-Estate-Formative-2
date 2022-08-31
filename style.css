@@ -87,7 +87,7 @@ a {
 }
 
 .page-width {
-  max-width: 1440px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -391,8 +391,8 @@ footer h4 {
 }
 
 #other-links .social-media-icons img {
- max-width: 40px;
- max-height: 30px;
+  max-width: 40px;
+  max-height: 30px;
 }
 /* FOOTER END */
 
@@ -538,15 +538,15 @@ footer h4 {
   font-size: 14px;
 }
 
-#wine-grid .wine-image{
+#wine-grid .wine-image {
   position: relative;
 }
 
-#wine-grid .wine-card img{
+#wine-grid .wine-card img {
   max-height: 400px;
 }
 
-#wine-grid .wine-glass{
+#wine-grid .wine-glass {
   position: absolute;
   bottom: 0;
   left: calc(100% + 20px);
@@ -588,26 +588,95 @@ footer h4 {
   }
   /* end code for displaying the drawer menu */
 
-    #shop-page-options .shop-options {
-      gap: 18px;
-      padding: 24px 0 16px;
-    }
-
-    #shop-page-options p{
-      padding: 16px;
-    }
-
-    #wine-grid .wine-options{
-      grid-template-columns: 1fr;
-      padding-bottom: 0;
-    }
-
-    .wine-card{
-      border-bottom: #14281d 2px solid;
-    }
+  #shop-page-options .shop-options {
+    gap: 18px;
+    padding: 24px 0 16px;
   }
-  /* END OF SHOP PAGE */
 
+  #shop-page-options p {
+    padding: 16px;
+  }
 
-  /* START WINE INFO PAGE */
+  #wine-grid .wine-options {
+    grid-template-columns: 1fr;
+    padding-bottom: 0;
+  }
 
+  .wine-card {
+    border-bottom: #14281d 2px solid;
+  }
+}
+/* END OF SHOP PAGE */
+
+/* START WINE INFO PAGE */
+#wine-info-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background-color: #f1efef;
+  padding: 48px;
+  gap: 100px;
+}
+
+#wine-info-page .wine-landing {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#wine-info-page .wine-tags {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+#win-info-page .wine-tags h1{
+  margin-bottom: 0;
+}
+
+#wine-info-page .wine-info .organic {
+  background-color: #14281d;
+  color: #f1efef;
+  font-family: "Calistoga";
+  font-size: 20px;
+  min-width: 100px;
+  text-align: center;
+  padding: 8px;
+}
+
+#wine-info-page .wine-info .biodynamic {
+  background-color: #6b0f1a;
+  color: #f1efef;
+  font-family: "Calistoga";
+  font-size: 20px;
+  min-width: 100px;
+  text-align: center;
+  padding: 8px;
+}
+
+#wine-info-page .wine-info .ca-field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+#wine-info-page .ca-field input {
+  max-width: 40px;
+}
+
+#wine-info-page .ca-field button {
+  margin-left: 0;
+}
+
+#wine-info-page .wine-info a {
+  color: #14281d;
+  font-family: "Calistoga";
+  font-size: 18px;
+}
+
+#wine-info-page .wine-info p {
+  font-family: "Biryani";
+  font-style: italic;
+  color: #6b0f1a;
+}
