@@ -66,9 +66,17 @@ button {
   font-family: "Calistoga";
   font-size: 14px;
   padding: 8px 18px;
-  border-radius: 2em;
+  border-radius: 6px;
   margin-left: auto;
   min-width: 80px;
+}
+
+input {
+  min-height: 34px;
+  border-radius: 6px;
+  border: 1px solid #555;
+  padding: 8px;
+  min-width: 8ch;
 }
 
 a {
@@ -379,7 +387,7 @@ footer h4 {
   gap: 8px;
   font-family: "Calistoga";
   font-size: 20px;
-  padding-right: 75px;
+  padding-right: 110px;
 }
 
 #other-links .social-media-icons {
@@ -563,7 +571,7 @@ footer h4 {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
 }
 
 #wine-grid .wine-options input {
@@ -630,16 +638,12 @@ footer h4 {
   gap: 16px;
 }
 
-#win-info-page .wine-tags h1{
-  margin-bottom: 0;
-}
-
 #wine-info-page .wine-info .organic {
   background-color: #14281d;
   color: #f1efef;
   font-family: "Calistoga";
-  font-size: 20px;
-  min-width: 100px;
+  font-size: 16px;
+  min-width: 50px;
   text-align: center;
   padding: 8px;
 }
@@ -648,10 +652,14 @@ footer h4 {
   background-color: #6b0f1a;
   color: #f1efef;
   font-family: "Calistoga";
-  font-size: 20px;
-  min-width: 100px;
+  font-size: 16px;
+  min-width: 50px;
   text-align: center;
   padding: 8px;
+}
+/* any element followed by another element will . . .(a.k.a the derpy owl) */
+#wine-info-page .wine-info > * + * {
+  margin: 8px 0 0;
 }
 
 #wine-info-page .wine-info .ca-field {
@@ -670,6 +678,7 @@ footer h4 {
 }
 
 #wine-info-page .wine-info a {
+  display: block;
   color: #14281d;
   font-family: "Calistoga";
   font-size: 18px;
@@ -679,4 +688,57 @@ footer h4 {
   font-family: "Biryani";
   font-style: italic;
   color: #6b0f1a;
+  font-weight: 600;
+}
+
+#tasting-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 32px;
+  gap: 32px;
+  background-color: #6b0f1a;
+  color: #c59407;
+}
+
+#tasting-info .info-grid .name-vector-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+.name-vector-flex img {
+  max-width: 50px;
+  max-height: 40px;
+}
+
+.info-grid .one-up-blurb {
+  display: flex;
+  flex-flow: wrap row;
+  gap: 0.2ch 2ch;
+}
+
+.info-grid .one-up-blurb :first-child {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  #wine-info-page {
+    grid-template-columns: 1fr;
+    align-items: center;
+    gap: 32px;
+  }
+  #wine-info-page .wine-landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #wine-info-page .wine-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
 }
