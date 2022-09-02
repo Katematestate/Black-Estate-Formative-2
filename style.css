@@ -17,6 +17,7 @@ h2 {
   font-family: "Calistoga";
   font-weight: 400;
   font-size: 36px;
+  color: #14281d;
 }
 
 h3 {
@@ -29,6 +30,7 @@ h4 {
   font-family: "Calistoga";
   font-weight: 400;
   font-size: 20px;
+  margin: 4px;
 }
 
 h5 {
@@ -47,6 +49,7 @@ h6 {
 
 p {
   font-family: "Biryani";
+  font-size: 20;
 }
 
 table {
@@ -71,6 +74,10 @@ button {
   min-width: 80px;
 }
 
+button:hover {
+  transform: scale(1.1);
+}
+
 input {
   min-height: 34px;
   border-radius: 6px;
@@ -81,6 +88,8 @@ input {
 
 a {
   color: #f1efef;
+  font-family: "Calistoga";
+  font-size: 20px;
 }
 
 /* example of helper class */
@@ -387,7 +396,7 @@ footer h4 {
   gap: 8px;
   font-family: "Calistoga";
   font-size: 20px;
-  padding-right: 110px;
+  padding-right: 170px;
 }
 
 #other-links .social-media-icons {
@@ -692,8 +701,10 @@ footer h4 {
 }
 
 #tasting-info {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  margin: 0 auto;
   padding: 32px;
   gap: 32px;
   background-color: #6b0f1a;
@@ -711,6 +722,10 @@ footer h4 {
 .name-vector-flex img {
   max-width: 50px;
   max-height: 40px;
+}
+
+#tasting-info .info-grid p {
+  color: #f1efef;
 }
 
 .info-grid .one-up-blurb {
@@ -735,10 +750,77 @@ footer h4 {
     align-items: center;
   }
 
-  #wine-info-page .wine-info{
+  #wine-info-page .wine-info {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
   }
+}
+/* END OF WINE TASTING PAGE */
+
+/* START OF VINEYARDS PAGE */
+#vineyards-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  background-image: url(./resources/images/vineyards-landing.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+#vineyards-info .vineyard-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+#home-vineyard-info .info-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.home-vineyard-blurb h2 {
+  color: #f1efef;
+  text-align: center;
+}
+
+.home-vineyard-blurb a {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-vineyard-blurb {
+  color: #f1efef;
+  padding: 32px;
+  flex: 1;
+}
+
+.wines-from-home h5 {
+  text-align: center;
+  padding: 32px;
+}
+
+.home-wines {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  text-align: center;
+  color: #f1efef;
+}
+
+.wines-from-home .home-wines img {
+  border-radius: 6px;
+}
+
+.home-info-img {
+  flex: 1;
 }
